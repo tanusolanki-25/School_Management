@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/output.css">
+</head>
+<body>
+<%- include('./partials/nav') %>
+<div class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+    
+    <h1 class="text-2xl font-bold text-center text-red-500 mb-6">
+      Add School Details
+    </h1>
+
+    <form action="/addSchool" method="POST" class="space-y-4">
+
+      <input 
+        type="text" 
+        name="schoolName"
+        placeholder="School Name"
+        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-400"
+        required
+      >
+
+      <input 
+        type="text" 
+        name="address"
+        placeholder="address"
+        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-400"
+        required
+      >
+
+      <input 
+        type="number" 
+        step="any" 
+        name="latitude"
+        placeholder="Latitude (e.g. 28.61)"
+        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-400"
+        required
+      >
+
+      <input 
+        type="number" 
+        step="any" 
+        name="longitude"
+        placeholder="Longitude (e.g. 77.20)"
+        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-400"
+        required
+      >
+
+      <button 
+        type="submit"
+        class="w-full bg-red-500 text-white py-3 rounded-lg font-semibold hover:bg-red-600 transition duration-300"
+      >
+        Add
+      </button>
+
+    </form>
+
+  </div>
+</div>
+</body>
+</html>

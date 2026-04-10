@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+
+<body class="bg-gray-100">
+  <%- include('./partials/nav') %>
+  <div class="min-h-screen p-6">
+
+    <!-- Heading -->
+    <h1 class="text-2xl font-bold text-center mb-8 text-gray-800">
+      🏫 Schools
+    </h1>
+
+    <!-- Cards Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <% schools.forEach(school => { %>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+
+          <img 
+            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b"
+            alt="school"
+            class="w-full h-40 object-cover"
+          >
+
+          <div class="p-4">
+
+            <h2 class="text-lg font-bold text-gray-900">
+              <%= school.schoolName %>
+            </h2>
+
+            <p class="text-gray-600 text-sm mt-1">
+              📍 <%= school.city %>
+            </p>
+          </div>
+        </div>
+
+      <% }) %>
+
+    </div>
+  </div>
+
+</body>
+</html>
