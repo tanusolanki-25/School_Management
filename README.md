@@ -2,7 +2,7 @@
 
 ## 📌 Project Description
 This project is a simple School Locator System that stores school information such as name, address, and geographic coordinates (latitude & longitude).  
-The data is stored in JSON format and can be used for displaying schools on a map or managing school records.
+The data is stored in JSON format and can be used for displaying schools.
 
 ---
 
