@@ -1,4 +1,5 @@
 # 🏫 School Locator System
+---
 
 ## 📌 Project Description
 This project is a simple School Locator System that stores school information such as name, address, and geographic coordinates (latitude & longitude).  
